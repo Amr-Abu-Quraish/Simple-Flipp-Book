@@ -1,0 +1,185 @@
+
+
+.main-book .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+   
+
+}
+
+.paper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+   
+    
+   
+}
+
+.paper .front1{
+    background-color:midnightblue;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+}
+.paper .back1{
+    background-color: darkcyan;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+}
+
+
+.paper .front2{
+    background-color: aquamarine;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+}
+.paper .back2{
+    background-color:hotpink;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+}
+
+.paper .front3{
+    background-color: mediumorchid;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+} 
+.paper .back3{
+    background-color:midnightblue;
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+   border-radius:30px
+}
+
+
+
+
+.front1 {
+    z-index: 1;
+    backface-visibility: hidden;
+    border: 1px solid black;
+}
+.front3 {
+    z-index: 1;
+    backface-visibility: hidden;
+    border: 1px solid black;
+}
+.front2 {
+    z-index: 1;
+    backface-visibility: hidden;
+    border: 1px solid black;
+}
+.back-content {
+   transform: rotateY(180deg);
+}
+
+.front-content,
+.back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipped .front1,
+.flipped .front2,
+.flipped .front3,
+.flipped .back1,
+.flipped .back2,
+.flipped .back3{
+    
+    transform: rotateY(-180deg);
+}
+
+h1 {
+    font-size: 35px;
+}
+.left {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-weight: bolder;
+}
+.right {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+button {
+    border: none;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer; 
+    font-size: 25px;
+    transition: all 0.5s;
+}
+button:focus{
+    outline: none;
+}
+
+#p1 {
+    z-index: 4;
+}
+#p2 {
+    z-index: 3;
+}
+#p3 {
+    z-index: 2;
+}
